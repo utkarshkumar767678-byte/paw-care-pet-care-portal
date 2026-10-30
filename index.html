@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawCare - Pet Care Portal</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">🐾 PawCare</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Care for Your Little Friends</h1>
+
+            <p>
+                Your pet deserves the best care.
+                Book an appointment with our trusted pet care team.
+            </p>
+
+            <a href="#appointment" class="btn">
+                Book Appointment
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p class="section-description">
+            We provide everything your pet needs to stay healthy.
+        </p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h3>Health Checkup</h3>
+                <p>Regular health checkups to keep your pets healthy.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛁</div>
+                <h3>Pet Grooming</h3>
+                <p>Professional grooming to keep your pets clean.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💉</div>
+                <h3>Vaccination</h3>
+                <p>Essential vaccinations for your pet's protection.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About PawCare</h2>
+
+        <p>
+            PawCare is a pet care appointment portal designed
+            to make pet healthcare simple and convenient.
+            We help pet owners book appointments for checkups,
+            grooming and vaccination.
+        </p>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <h2>Book an Appointment</h2>
+
+        <p class="section-description">
+            Fill in the details below to book your pet's appointment.
+        </p>
+
+        <form id="appointmentForm">
+
+            <input type="text" id="ownerName"
+                placeholder="Your Name" required>
+
+            <input type="text" id="petName"
+                placeholder="Pet Name" required>
+
+            <select id="petType" required>
+                <option value="">Select Pet Type</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option value="Health Checkup">Health Checkup</option>
+                <option value="Pet Grooming">Pet Grooming</option>
+                <option value="Vaccination">Vaccination</option>
+            </select>
+
+            <input type="date" id="appointmentDate" required>
+
+            <input type="time" id="appointmentTime" required>
+
+            <input type="tel" id="phone"
+                placeholder="Phone Number" required>
+
+            <button type="submit" class="btn">
+                Confirm Appointment
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🐾 PawCare</h3>
+        <p>Making pet care easier and better.</p>
+        <p>© 2026 PawCare. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
